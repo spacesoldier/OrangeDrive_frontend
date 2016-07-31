@@ -63,9 +63,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#tf-home" class="page-scroll">Главная</a></li>
-            <li><a href="#tf-about" class="page-scroll">О нас</a></li>
-            <li><a href="#tf-team" class="page-scroll">Заказать авто</a></li>
+            <li><a href="#tf-home" class="page-scroll">�������</a></li>
+            <li><a href="#tf-about" class="page-scroll">� ���</a></li>
+            <li><a href="#tf-team" class="page-scroll">�������� ����</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -79,15 +79,15 @@
 				<div class="content">
 					<div class="row">
 						<div class="col-md-12">
-							<h1><span>Агрегатор каршеринга</span></strong></h1>
-							<!--<p class="lead">Агрегатор каршеринга</strong></p>-->
-							<!--<p class="lead"><button id="getCarBtn" class="btn tf-btn btn-default">Поехали</button></p>-->
+							<h1><span>��������� ����������</span></strong></h1>
+							<!--<p class="lead">��������� ����������</strong></p>-->
+							<!--<p class="lead"><button id="getCarBtn" class="btn tf-btn btn-default">�������</button></p>-->
 							<!--<a href="#tf-about" class="fa fa-angle-down page-scroll"></a>-->
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12" style="padding-top:20px;">
-							<button id="getCarBtn" class="col-md-offset-3 col-md-6 btn btn-warning btn-lg">Поехали</button>
+							<button id="getCarBtn" class="col-md-offset-3 col-md-6 btn btn-warning btn-lg">�������</button>
 						</div>
 					</div>
 					<div class="row" style="padding-top:20px;">
@@ -100,86 +100,20 @@
 		</div>
     </div>
 
-    <!-- About Us Page
+    <!-- Here is the map
     ==========================================-->
-    <div id="tf-about">
+    <div id="car_map">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <img src="img/02.png" class="img-responsive">
-                </div>
-                <div class="col-md-6">
-                    <div class="about-text">
-                        <div class="section-title">
-                            <h2><strong>Машина работает на Вас</strong></h2>
-                            <hr>
-                            <div class="clearfix"></div>
-                        </div>
-                        <p class="intro">Если Ваша машина простаивает, пока ждет около дома или офиса - 
-                        она может приносить деньги!</p>
-                        <ul class="about-list">
-                            <li>
-                                <span class="fa fa-dot-circle-o"></span>
-                                <strong>Наша миссия</strong> - <em>помочь Вам получить дополнительный доход от автомобиля</em>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                
             </div>
-        </div>
-    </div>
-
-    <!-- Team Page
-    ==========================================-->
-    <div id="tf-team" class="text-center">
-        <div class="overlay">
-            <div class="container">
-
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-
-						<div class="section-title center">
-							<h2>Закажи машину <strong>сейчас!</strong></h2>
-							<div class="line">
-								<hr>
-							</div>
-							<div class="clearfix"></div>
-							<small><em>При заказе машины, Вам на телефон придет смс с ее местоположением и qr-код</em></small>            
-						</div>
-
-						<form>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="exampleInputEmail1">Email address</label>
-										<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="exampleInputPassword1">Password</label>
-										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="exampleInputEmail1">Message</label>
-								<textarea class="form-control" rows="3"></textarea>
-							</div>
-							
-							<button type="submit" class="btn tf-btn btn-default">Submit</button>
-						</form>
-
-					</div>
-				</div>
-			</div>
         </div>
     </div>
 
     <nav id="footer">
         <div class="container">
             <div class="pull-left fnav">
-                <p>Все права защищены. ООО "OrangeDrive"</p>
+                <p>OrangeDrive</p>
             </div>
             <div class="pull-right fnav">
                 <ul class="footer-social">
@@ -226,7 +160,7 @@
 				)
 			
 			}).success(function(input){
-				
+				document.location.href = "/go"
 			})
 		
 		})
