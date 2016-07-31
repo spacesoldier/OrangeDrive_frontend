@@ -90,6 +90,11 @@
 							<button id="getCarBtn" class="col-md-offset-3 col-md-6 btn btn-warning btn-lg">Открыть Машину</button>
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-md-12" style="padding-top:20px;">
+							<button id="outCarBtn" class="col-md-offset-3 col-md-6 btn btn-default btn-lg">Закрыть Машину</button>
+						</div>
+					</div>
 					<div class="row" style="padding-top:20px;">
 						<div class="col-md-12">
 							<a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
@@ -161,7 +166,22 @@
 				)  
 			
 			})
-		
+			$("#outCarBtn").on('click',function(){
+				$.ajax(
+					{
+						url: '/gate',
+						type:'GET',
+						data: {
+								rq:'car_setstate',
+								s: '0'
+							  },
+						success: function(input){
+							//document.location.href = "/go"
+						}
+					}
+				)  
+			
+			})
 		})
 	</script>
 
