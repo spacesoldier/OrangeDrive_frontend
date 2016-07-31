@@ -100,9 +100,9 @@
 		</div>
     </div>
 
-    <!-- Here is the map
+    <!-- About Us Page
     ==========================================-->
-    <div id="car_map">
+    <div id="tf-about">
         <div class="container">
             <div class="row">
                 
@@ -113,7 +113,7 @@
     <nav id="footer">
         <div class="container">
             <div class="pull-left fnav">
-                <p>OrangeDrive</p>
+                <p>Все права защищены. ООО "OrangeDrive"</p>
             </div>
             <div class="pull-right fnav">
                 <ul class="footer-social">
@@ -148,7 +148,7 @@
 			$("#getCarBtn").on('click',function(){
 				$.ajax(
 					{
-						url: 'orangedrive.ru/gate',
+						url: '/gate',
 						type:'GET',
 						data: {
 								rq:'get_car',
