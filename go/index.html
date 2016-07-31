@@ -154,13 +154,14 @@
 								rq:'get_car',
 								user_id: '1',
 								lat: '33',
-								lon: '35'
-							  }
+								lng: '35'
+							  },
+						success: function(input){
+							document.location.href = "/go"
+						}
 					}
 				)
 			
-			}).success(function(input){
-				document.location.href = "/go"
 			})
 		
 		})
