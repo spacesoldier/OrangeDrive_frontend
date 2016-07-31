@@ -87,7 +87,7 @@
 				<!--</div>-->
 				<div class="row text-center">
 					<div class="col-md-12">
-						<button class="btn tf-btn btn-default">Поехали</button>
+						<button id="getCarBtn" class="btn tf-btn btn-default">Поехали</button>
 					</div>
 				</div>
 			</div>
@@ -202,6 +202,27 @@
     <!-- Javascripts
     ================================================== -->
     <script type="text/javascript" src="js/main.js"></script>
+	
+	<script type="text/jacascript">
+		$(document).ready(function(){
+			$("#getCarBtn").on('click',function(){
+				$.ajax(
+					{
+						url: 'orangedrive.ru/gate',
+						type:'GET',
+						data: {
+								rq:'get_car',
+								user_id: '1',
+								lat: '33',
+								lon: '35'
+							  }
+					}
+				)
+			
+			})
+		
+		})
+	</script>
 
   </body>
 </html>
